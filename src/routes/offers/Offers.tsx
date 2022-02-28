@@ -10,7 +10,7 @@ export default function Offers(): JSX.Element {
 
   React.useEffect(() => {
     if (!(new URLSearchParams(search)).get('customer-id')) {
-      navigate('/login', { replace: true });
+      navigate('/register', { replace: true });
     }
   }, [search]);
 

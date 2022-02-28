@@ -5,7 +5,7 @@ export default function NoMatch(): JSX.Element {
   let navigate = useNavigate();
 
   React.useEffect(() => {
-    navigate('/login', { replace: true });
+    navigate('/register', { replace: true });
   });
 
   return <></>;

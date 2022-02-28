@@ -5,7 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import './App.scss';
-import { Offers, Login, NoMatch } from './routes';
+import { Offers, Registration, NoMatch } from './routes';
 import {
   ApolloClient,
   InMemoryCache,
@@ -40,7 +40,7 @@ export default function App() {
       <div className="navbar"><div className="container-jf"><Logo/></div></div>
       <Router>
         <Routes>
-          <Route path="/login" element={<Login />}/>
+          <Route path="/register" element={<Registration />}/>
           <Route path="/offers" element={<Offers />}/>
           <Route path="*" element={<NoMatch />} />
         </Routes>

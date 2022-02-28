@@ -4,9 +4,9 @@ import Button from 'react-bootstrap/Button';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import { useForm } from "react-hook-form";
-import './Login.scss';
+import './Registration.scss';
 
-export default function Login(): JSX.Element {
+export default function Registration(): JSX.Element {
   const navigate = useNavigate();
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
 
