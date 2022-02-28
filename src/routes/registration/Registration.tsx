@@ -8,7 +8,7 @@ import './Registration.scss';
 
 export default function Registration(): JSX.Element {
   const navigate = useNavigate();
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
   const submit = (data: any) => {
     const {email, phoneNumber} = data;
@@ -87,7 +87,6 @@ export default function Registration(): JSX.Element {
         <Button variant="primary" type="submit" className="custom-button">Register</Button>
 
         <div className="registration-terms">By clicking on "Sign up" above, customers confirm to have read and agree to the terms and conditions & privacy policy of the  company</div>
-
       </div>
     </form>
   );

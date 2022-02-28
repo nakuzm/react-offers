@@ -38,18 +38,22 @@ export default function Offers(): JSX.Element {
           <h5 className="offers-section-title">Best offers</h5>
           <div className="offers-section-delimiter">{/**/}</div>
         </div>
-        <div className={'offers-grid d-flex flex-wrap align-items-start ' + (offers.length > 2 ? 'justify-content-between' : '')}>{offers.map((offer, index) => {
-          return <Card key={index} {...offer} /> ;
-        })}</div>
+        <div className={'offers-grid d-flex flex-wrap align-items-start ' + (offers.length > 2 ? 'justify-content-between' : '')}>
+          {offers.map((offer, index) => {
+            return <Card key={index} {...offer} /> ;
+          })}
+        </div>
       </div>
       <div className="offers-section">
         <div className="offers-section-head d-flex align-items-center">
           <h5 className="offers-section-title">Recommended</h5>
           <div className="offers-section-delimiter">{/**/}</div>
         </div>
-        <div className={'offers-grid d-flex flex-wrap align-items-start ' + (offers.length > 2 ? 'justify-content-between' : '')}>{offers.map((offer, index) => {
-          return <Card key={index} {...offer} /> ;
-        })}</div>
+        <div className={'offers-grid d-flex flex-wrap align-items-start ' + (offers.length > 2 ? 'justify-content-between' : '')}>
+          {offers.map((offer, index) => {
+            return <Card key={index} {...offer} /> ;
+          })}
+        </div>
       </div>
     </div>
   );
