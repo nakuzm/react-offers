@@ -1,0 +1,85 @@
+@use "sass:map";
+@import "../../styles/variables";
+
+.registration-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 12px;
+  padding: 0 24px;
+
+  @media (min-width: 376px) {
+    max-width: 320px;
+    padding: 0;
+  }
+
+  .registration-title {
+    color: map.get($purple-color, 900);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 33px;
+    margin-top: 18px;
+
+    @media (min-width: 376px) {
+      font-size: 40px;
+      line-height: 48px;
+      margin-top: 48px;
+    }
+  }
+
+  .registration-desc {
+    color: map.get($neutral-color, 600);
+    margin: 14px 0;
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (min-width: 376px) {
+      margin: 24px 0;
+    }
+  }
+
+  .registration-terms {
+    line-height: 20px;
+    color: map.get($neutral-color, 600);
+    text-align: center;
+  }
+
+  .custom-button {
+    margin: 28px 0 22px;
+
+    @media (min-width: 376px) {
+      margin: 23px 0 26px;
+    }
+  }
+}
+
+.custom-form-control {
+  color: map.get($neutral-color, 900);
+  font-weight: 700;
+  font-size: 16px;
+
+  &:focus {
+    color: map.get($neutral-color, 900);
+  }
+}
+
+.custom-form-floating {
+  color: map.get($neutral-color, 900);
+  margin-top: 14px;
+}
+
+.custom-form-check {
+  color: map.get($neutral-color, 600);
+  margin-top: 30px;
+
+  .form-check-input {
+    height: 2em;
+    width: 4em;
+    margin-right: 10px;
+  }
+}
+
+.custom-invalid-feedback {
+  display: block;
+  margin-bottom: 0.25rem;
+}

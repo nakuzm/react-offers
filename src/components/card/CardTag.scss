@@ -1,0 +1,17 @@
+@use "sass:map";
+@import "../../styles/variables";
+
+.card-tag {
+  background: #FFFFFF;
+  border: 1px solid map.get($neutral-color, 500);
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding: 5px 10px;
+
+  .card-tag-text {
+    margin-left: 8px;
+    font-size: 12px;
+    line-height: 20px;
+    color: map.get($neutral-color, 600);
+  }
+}

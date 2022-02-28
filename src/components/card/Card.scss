@@ -1,0 +1,79 @@
+@use "sass:map";
+@import "../../styles/variables";
+
+.card-container {
+  max-width: 350px;
+  padding: 25px;
+  background-color: map.get($purple-color, 100);
+  border: 3px solid map.get($purple-color, 900);
+  border-radius: 10px;
+
+  .card-star-list {
+    gap: 4px;
+    margin: 20px auto 0;
+  }
+
+  .card-star-desc {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    color: map.get($neutral-color, 700);
+  }
+
+  .card-sum {
+    font-weight: 700;
+    color: #000000;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .card-sum-desc {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 13px;
+    color: map.get($neutral-color, 700);
+    text-align: center;
+  }
+
+  .card-sum-table {
+    font-size: 12px;
+    line-height: 20px;
+    color: map.get($neutral-color, 900);
+    margin-top: 14px;
+  }
+
+  .card-interest {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: map.get($neutral-color, 900);
+  }
+
+  .custom-button {
+    margin: 5px 0;
+  }
+
+  .card-decision {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 13px;
+    color: map.get($neutral-color, 700);
+    margin-top: 10px;
+
+    .icon-stop-watch {
+      margin-right: 5px;
+    }
+  }
+
+  .card-tags {
+    margin-top: 10px;
+  }
+
+  .card-more-section {
+    margin-top: 16px;
+  }
+}

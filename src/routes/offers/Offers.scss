@@ -1,0 +1,63 @@
+@use "sass:map";
+@import "../../styles/variables";
+
+.offers-title {
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: -1px;
+  color: map.get($neutral-color, 900);
+  margin: 21px 0 40px;
+
+  @media (max-width: 375px) {
+    padding: 0 20px;
+    font-size: 22px;
+    line-height: 32px;
+    margin: 14px 0;
+  }
+
+  .offers-title-bold {
+    color: map.get($purple-color, 900);
+    font-weight: 700;
+  }
+}
+
+.offers-section {
+  margin-bottom: 30px;
+}
+
+.offers-section-head {
+  margin-bottom: 30px;
+
+  @media (max-width: 375px) {
+    padding: 0 20px;
+  }
+
+  .offers-section-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: map.get($purple-color, 900);
+    display: inline-block;
+    padding-right: 5px;
+    background-color: #FFFFFF;
+    margin: 0;
+  }
+
+  .offers-section-delimiter {
+    height: 1px;
+    background-color: map.get($purple-color, 900);
+    width: 100%;
+    flex: 1;
+  }
+}
+
+.offers-grid {
+  gap: 35px;
+
+  @media (max-width: 375px) {
+    justify-content: space-around !important;
+    gap: 6px;
+  }
+}
